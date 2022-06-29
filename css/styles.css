@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.picture {
+    width: 40%;
+    height: 100%;
+    background-image: url(../img/patrick-langwallner-mAmRJu088lU-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.credits {
+    color: white; 
+    justify-self: flex-end;
+}
+
+.credits a {
+    color: white;
+}
+
+#content {
+    display: flex;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    flex-grow: 1;
+}
+
+.form-container > p {
+    margin-left: 32px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#form {
+    margin-top: 32px;
+    width: 100%;
+    background-color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form h2 {
+    margin-left: 32px;
+    width: 100%;
+    font-weight: 400;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    width: 46%;
+}
+
+.item > input {
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: large;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(83, 83, 235);
+    box-shadow: 0px 0px 3px rgb(83, 83, 235);
+}
+
+form > button {
+    margin-left: 32px;
+    margin-bottom: 16px;
+    color: white;
+    background-color: #596D48;
+    border-radius: 6px;
+    padding: 8px 32px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1014px){
+    .item {
+        width: 100%;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
