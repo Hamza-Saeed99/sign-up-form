@@ -103,10 +103,24 @@ form > button {
     font-weight: bold;
 }
 
+.error {
+    border: 1px solid red;
+    box-shadow: 0px 0px 3px red;
+}
+
 @media screen and (max-width: 1014px){
     .item {
-        width: 100%;
+        width: 85%;
     }
+    .picture {
+        display: none;
+    }
+}
+
+.notequal {
+    color: red;
+    font-size: small;
+    margin: 0px;
 }
 
 footer {
@@ -114,4 +128,5 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    background-color: rgb(245, 245, 245);
 }

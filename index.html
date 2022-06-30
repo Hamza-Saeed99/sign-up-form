@@ -7,6 +7,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.jpg">
 </head>
 <body>
     <div id="content">
@@ -25,17 +26,17 @@
                     <h2>Let's Go!</h2>
                     <div class="item">
                         <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" required>
                     </div>
 
                     <div class="item">
                         <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" required>
                     </div>
                     
                     <div class="item">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div class="item">
@@ -43,14 +44,15 @@
                         <input type="tel" name="phone" id="phone">
                     </div>
 
-                    <div class="item">
+                    <div class="item passwordField">
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input class="" type="password" name="password" id="password" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="Password must contain at least 8 characters, include a lowercase, an uppercase letter, a number and a special character(!?,-$%&)" onchange="checkIfPasswordsEqual()" required>
                     </div>
+
 
                     <div class="item">
                         <label for="confirmPassword">Confirm Password</label>
-                        <input type="text" name="confirmPassword" id="confirmPassword">
+                        <input class="" type="password" name="confirmPassword" id="confirmPassword" onchange="checkIfPasswordsEqual()" required>
                     </div>
                 
                     <button type="submit">Create Account</button>
